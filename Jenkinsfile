@@ -7,7 +7,7 @@ pipeline {
                 echo 'Building..'
             }
         }
-        stage('Build') {
+        stage('versioning') {
             steps {
                 sh "pwd"
                 sh ls "./target"
