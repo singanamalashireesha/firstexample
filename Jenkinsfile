@@ -21,5 +21,11 @@ pipeline {
                 }
             }
         }
+         stage ('versioning') {
+            steps {
+                sh "pwd"
+                sh "ls ./target"
+            }
+        }
     }
 }
